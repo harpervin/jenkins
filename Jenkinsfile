@@ -36,7 +36,7 @@ pipeline {
                 sh '''
                 export FLASK_APP=app.py
                 nohup flask run --host=0.0.0.0 --port=5000 > flask.log 2>&1 &
-                echo "Flask app started on port 5000"
+                echo "Flask app started on port 5000!"
                 '''
             }
         }
